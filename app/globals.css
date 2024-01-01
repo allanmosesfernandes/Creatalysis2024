@@ -3,25 +3,66 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --createYellow: #FFF200;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+.leading-36 {
+  line-height: 37px !important;
+}
+
+.griddy {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+}
+
+.bg-image {
+  background-image: url('.././public/images/rectangle-27.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.griddy5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 3rem 0;
+}
+
+/* Header */
+header a.active:before {
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  background-color: black;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .griddy {
+    grid-template-columns: 1fr 1fr;
+    /* Two columns on mobile */
+    grid-template-rows: auto auto;
+    /* Two rows */
+    grid-template-areas:
+      "first first"
+      "second third";
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .griddy> :nth-child(1) {
+    grid-area: first;
+  }
+
+  .griddy> :nth-child(2) {
+    grid-area: second;
+  }
+
+  .griddy> :nth-child(3) {
+    grid-area: third;
+  }
 }
