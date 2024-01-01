@@ -153,12 +153,12 @@ export default function Home() {
           <div className='lg:w-10/12 w-full flex flex-col lg:mt-16 mt-0 mx-auto bg-image p-32'>
             <h2 className='font-bold text-2xl lg:text-4xl text-white mb-4'>
               <span className='font-bold'>            
-                <Image src='/images/shield.png' 
+                <Image src='/images/moneyW.png' 
                 alt='users'          
                 width={30}
                 height={20} 
                 className='inline-flex items-center mb-2 mx-2'/>
-                <span className='font-bold'>Insights in a Creative Way</span></span>
+                <span className='font-bold'>Earn with us</span></span>
             </h2>
             <p className='text-white lg:text-xl text-lg'>
               Your insights are priceless gems that can shape the future of digital products and services. Embrace the chance to make a difference and be part of something extraordinary. 

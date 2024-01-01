@@ -6,6 +6,9 @@
   --createYellow: #FFF200;
 }
 
+body {
+  background-color: #FFF200;
+}
 
 .leading-36 {
   line-height: 37px !important;
