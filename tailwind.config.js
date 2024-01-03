@@ -14,6 +14,7 @@ module.exports = {
       },
       colors : {
         createYellow: '#FFF200',
+        createYellowHover: '#FFD700',
         bodyCopy: "#3D3D3D",
         createGray: "#666666",
       }
