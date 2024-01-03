@@ -6,7 +6,7 @@ import React from 'react'
 const Header = () => {
     const activeLink = usePathname();
 return (
-    <header className='uppercase font-bold text-black flex items-center justify-between w-8/12 mx-auto h-[10vh]'>
+    <header className='uppercase font-bold text-black md:flex items-center justify-between w-8/12 mx-auto h-[10vh] hidden'>
         <Link href="about" className={activeLink.includes('about') ? "relative active" : "relative"}>About Us</Link>
         <Link href="/" className={activeLink.includes('earn') ? "relative active" : "relative"}>Earn with Us</Link>
         <Link href="/" className={activeLink.includes('/') ? "relative active" : "relative"}>Home</Link>

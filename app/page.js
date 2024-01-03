@@ -5,17 +5,18 @@ import Accordion from './components/accordion';
 export default function Home() {
   return (
     <main>
+      {/* First Fold */}
       <section className='bg-createYellow h-[80vh] container mx-auto'>
-        <div className='flex flex-col items-center justify-center h-full'>
+        <div className='flex flex-col items-center h-full mt-24'>
           <Image
-            src='/images/logo-black.svg'
+            src='/images/logo-black-new.svg'
             alt='Creatalysis Logo'
             width={300}
             height={200}
-            className='object-contain'
+            className='object-contain lg:w-auto w-[200px]'
           />
           <div className='lg:w-8/12 w-full text-center flex flex-col gap-6 mt-6'>
-            <p className='text-bodyCopy lg:text-2xl text-lg px-4'>
+            <p className='text-bodyCopy lg:text-2xl md:text-lg text-md px-4 mt-12'>
               At Creatalysis, we're all about embracing the power of <span className='font-bold'>understanding </span>
                   <Image src='/images/people.png' 
                   alt='users'          
@@ -31,7 +32,7 @@ export default function Home() {
                   className='inline-flex items-center mb-2 mx-2'/>
                   <span className='font-bold'>business best.</span> 
             </p>
-            <p className='text-bodyCopy lg:text-2xl text-lg px-4'>
+            <p className='text-bodyCopy lg:text-2xl md:text-lg text-md px-4'>
             By becoming an integral part of <span className='font-bold'>your</span>
               <Image src='/images/heart-hands_.png' 
                   alt='users'          
