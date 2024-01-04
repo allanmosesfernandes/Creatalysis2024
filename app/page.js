@@ -3,6 +3,8 @@ import services from "./utils/services";
 import Accordion from './components/accordion';
 import YellowBtn from './components/buttons/yellowBtn';
 import TransparentButton from './components/buttons/transparentButton';
+import ThoughtsFAQ from './components/homepage/thoughtsYouMightHave';
+import Research from './components/homepage/research';
 
 export default function Home() {
   return (
@@ -180,7 +182,7 @@ export default function Home() {
       {/* Convinced or Confused? */}
       <section className='bg-black'>
         <div className='container py-32 mx-auto items-center'>
-          <div className='lg:w-10/12 w-full mx-auto md:px-22 md:flex md:flex-row flex-col'>
+          <div className='lg:w-10/12 w-full mx-auto md:px-22 md:flex md:flex-row flex-col justify-between'>
             <div>
               <p className='text-white text-2xl lg:text-4xl font-bold mx-4 lg:mx-0 md:text-left text-center'>
                 Convinced or Confused?
@@ -189,61 +191,17 @@ export default function Home() {
                 Either way we have your back. Lets talk and get going!
               </p>
             </div>
-          <div className='md:ml-auto md:w-full w-10/12'>
+          <div className='w-[80%] md:w-auto md:mx-0 mx-auto'>
             <YellowBtn text="Let's connect" goTo="/"/>
           </div>
           </div>
-          {/* <div className=''>
-            <YellowBtn text="Let's connect" goTo="/"/>
-          </div> */}
         </div>
       </section>
-      <section className='bg-white'>
-        <div className='container mx-auto flex flex-col lg:flex-row justify-center py-32'>
-          <div className='lg:w-10/12 w-full flex flex-col lg:mt-16 mt-0 mx-auto'>
-            <p className='text-black text-2xl lg:text-4xl font-bold mx-4 lg:mx-0 text-center'>
-              We have done research with
-            </p>
-            <div className='griddy5'>
-              <Image src='/images/image-1.png'
-                    alt='users'
-                    width={100}
-                    height={60}
-                    className='mx-auto object-contain'/>
-              <Image src='/images/image-2.png'
-                    alt='users'
-                    width={80}
-                    height={60}
-                    className='mx-auto object-contain'/>
-              <Image src='/images/image-3.png'
-                    alt='users'
-                    width={80}
-                    height={60}
-                    className='mx-auto object-contain'/>
-              <Image src='/images/image-4.png'
-                    alt='users'
-                    width={80}
-                    height={60}
-                    className='mx-auto object-contain'/>
-              <Image src='/images/image-5.png'
-                    alt='users'
-                    width={80}
-                    height={60}
-                    className='mx-auto object-contain'/>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className='bg-black'>
-        <div className='container flex py-32 mx-auto'>
-          <div className='w-full'>
-            <p className='text-white text-2xl lg:text-4xl font-bold mx-4 lg:mx-0'>
-              Thoughts you might have
-            </p>
-            <Accordion />
-          </div>
-        </div>
-      </section>
+      {/* We have done research with */}
+      <Research />
+      {/* Thoughts you might have */}
+      <ThoughtsFAQ />
     </main>
   )
 }
+

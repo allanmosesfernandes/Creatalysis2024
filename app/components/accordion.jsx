@@ -10,14 +10,14 @@ const Accordion = () => {
 
   return (
     <>
-        <div className='flex flex-col py-6'>
+        <div className='flex flex-col py-6 px-4'>
             {
                 showMore ?             
                     accordionQuestions.map((question, index) => {
                             return (
                                 <div className='flex flex-col border-b border-white py-6' key={index}>
                                     <div className='flex justify-between'>
-                                        <h2 className='text-white text-xl font-bold'>
+                                        <h2 className='text-white md:text-xl text-lg font-bold w-[80%] md:w-auto'>
                                             {question["title"]}
                                         </h2>
                                         <button className='btn bg-createYellow w-[30px] h-[30px] text-black rounded-full' onClick={() => setisActive(question["index"] )}>
@@ -38,7 +38,7 @@ const Accordion = () => {
                         return (
                             <div className='flex flex-col border-b border-white py-6' key={index}>
                                 <div className='flex justify-between'>
-                                    <h2 className='text-white text-xl font-bold'>
+                                    <h2 className='text-white md:text-xl text-lg font-bold w-[80%] md:w-auto'>
                                         {question["title"]}
                                     </h2>
                                     <button className='btn bg-createYellow w-[30px] h-[30px] text-black rounded-full' onClick={() => setisActive(question["index"])}>
@@ -47,7 +47,7 @@ const Accordion = () => {
                                         }
                                     </button>        
                                 </div>
-                                <p className={active === question["index"] ? "text-white opacity-1 transition duration-200 ease-in" : "opacity-0"}>
+                                <p className={active === question["index"] ? "text-white opacity-1 transition duration-200 ease-in md:text-auto text-md" : "opacity-0"}>
                                     {question["subtitle"]}
                                 </p>
                             </div>
@@ -59,7 +59,7 @@ const Accordion = () => {
                 <button
                 className='text-white border-white border-2 w-fit my-12'
                 onClick={() => setShowMore(!showMore)}>
-                    {showMore ? <BlackBtn text={"Show Less"} /> : <BlackBtn text={"Show More"} goTo="#" />}
+                    {showMore ? <BlackBtn text={"Show Less"} /> : <BlackBtn text={"Show More"} />}
                 </button>
                 {
                     showMore ? <p className='text-white'>Have more queries? Reach us on hello@creatalysis.com</p> : ""
