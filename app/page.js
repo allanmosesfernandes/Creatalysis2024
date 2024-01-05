@@ -5,6 +5,7 @@ import YellowBtn from './components/buttons/yellowBtn';
 import TransparentButton from './components/buttons/transparentButton';
 import ThoughtsFAQ from './components/homepage/thoughtsYouMightHave';
 import Research from './components/homepage/research';
+import Articles from './components/homepage/articles';
 
 export default function Home() {
   return (
@@ -201,6 +202,7 @@ export default function Home() {
       <Research />
       {/* Thoughts you might have */}
       <ThoughtsFAQ />
+      <Articles />
     </main>
   )
 }

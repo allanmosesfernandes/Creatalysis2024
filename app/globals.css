@@ -76,3 +76,27 @@ header a.active:before {
     grid-area: third;
   }
 }
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .articles-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+.zoom-image {
+  transition: transform 0.3s ease; /* Adjust duration and easing function as desired */
+  /* Ensure the image will not be displaced out of its container */
+  overflow: hidden;
+  /* Use transform-origin to keep the image centered as it scales */
+  transform-origin: center;
+}
+
+.zoom-image:hover {
+  /* Scale the image to whatever size you want, 1.1 is a 10% zoom */
+  transform: scale(1.1);
+}
