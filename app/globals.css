@@ -53,7 +53,7 @@ header a.active:before {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .griddy {
     grid-template-columns: 1fr 1fr;
     /* Two columns on mobile */
@@ -85,7 +85,7 @@ header a.active:before {
 @media only screen and (max-width: 600px) {
   .articles-grid {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 2rem;
   }
 }
 .zoom-image {

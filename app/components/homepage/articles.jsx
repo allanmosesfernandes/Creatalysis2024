@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
+import BlackBtn from '../buttons/blackBtn';
 
 const Articles = () => {
     const articles = [
@@ -24,16 +25,20 @@ const Articles = () => {
         },
     ]
 return (
-    <section className='container mx-auto articles-grid py-32 md:py-22 py-12'>
+    <section className='container mx-auto lg:py-28 md:py-22 py-12'>
+        <p className="text-black text-2xl lg:text-4xl font-bold mx-4 lg:mx-0 text-center mb-12">
+            From Our Minds to Yours:
+        </p>
+        <div className='articles-grid p-4'>
         {articles.map((article, index) => (
             <Link key={index} href={article.link}>
                 <div className='flex flex-col relative' key={index} >
                     <div className='flex flex-col w-full'>
                         <a href={article.link} target='_blank' rel='noreferrer' className='bg-createYellow p-4'>
-                            <h2 className='text-black  md:text-xl text-lg  font-bold mx-4 lg:mx-0 h-[90px]'>
+                            <h2 className='text-black  lg:text-xl text-md  font-bold mx-4 lg:mx-0 lg:h-[90px]'>
                                 {article.title}
                             </h2>
-                            <p className='text-black text-sm lg:text-lg font-normal mx-4 lg:mx-0 italic'>
+                            <p className='text-black text-sm lg:text-md font-normal mx-4 lg:mx-0 italic'>
                                 {article.readTime}
                             </p>
                         </a>
@@ -45,8 +50,13 @@ return (
                 </div>
             </Link>
         ))}
+        </div>
+        <div className='flex justify-center md:mt-12 mt-6'>
+            <BlackBtn text='Read more' goTo='https://medium.com/@creatalysis' />
+        </div>
     </section>
 );
 }
 
 export default Articles
+/* https://medium.com/@creatalysis */
