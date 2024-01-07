@@ -100,3 +100,16 @@ header a.active:before {
   /* Scale the image to whatever size you want, 1.1 is a 10% zoom */
   transform: scale(1.1);
 }
+
+/* Footer */
+.footer-griddy {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+}
+
+.footer-social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}

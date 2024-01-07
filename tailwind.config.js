@@ -17,7 +17,10 @@ module.exports = {
         createYellowHover: '#FFD700',
         bodyCopy: "#3D3D3D",
         createGray: "#666666",
-      }
+      },
+      boxShadow: {
+        'create': '0px 4px 4px 3px rgba(0, 0, 0, 0.07)',
+      },
     },
   },
   plugins: [],
