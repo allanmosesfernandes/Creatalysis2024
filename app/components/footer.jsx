@@ -13,7 +13,7 @@ const Footer = () => {
     }
 
     return (
-    <footer className='footer-griddy container mx-auto mb-12'>
+    <footer className='footer-griddy container mx-auto my-12'>
         {/* Footer Left */}
         <div className="flex flex-col md:justify-between justify-center gap-[1rem]">
             <Image src='/images/footer-logo.svg'
