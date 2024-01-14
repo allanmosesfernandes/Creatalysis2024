@@ -29,12 +29,23 @@ body {
   background-repeat: no-repeat;
 }
 
+.clicktodownload::before {
+  color: white;
+  content: "CLICK TO DOWNLOAD";
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  padding: 5px;
+}
+
 .griddy5 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   gap: 1rem;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 @media only screen and (max-width: 900px) {
   .griddy5 {
@@ -105,9 +116,17 @@ header a.active:before {
 .footer-griddy {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  gap: 2rem;
+  gap: 5rem;
+
 }
 
+@media only screen and (max-width: 900px) {
+  .footer-griddy {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+}
 .footer-social-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
