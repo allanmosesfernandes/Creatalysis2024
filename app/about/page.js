@@ -37,39 +37,41 @@ const About = () => {
     </section>
     <section className='container mx-auto'>
         <div className='bg-createYellow lg:p-32 md:p-22 p-12  w-11/12 mx-auto'>
-        <p className=' text-createGray lg:mb-4 mb-2 lg:text-xl text-md border-l-4 pl-2 border-createGray mx-4 lg:mx-0'>Our Philosphy </p>
-            <p className='text-5xl font-bold leading-[66px]'>
-            we understand users, you understand business. That's why become an integral part of your team and help you to uncover user insights. All this while keeping the business reins in your hand.
-            </p>
+        <p className=' text-createGray mb-4 lg:text-xl text-md border-l-4 pl-2 border-createGray mx-0 lg:mx-0'>
+            Our Philosphy 
+        </p>
+        <p className='md:text-3xl lg:text-5xl text-xl font-bold leading-[22px] lg:leading-[66px]'>
+            We understand users, you understand business. That's why become an integral part of your team and help you to uncover user insights. All this while keeping the business reins in your hand.
+        </p>
         </div>
     </section>
     <section className='bg-createYellow'>
-        <div className='container mx-auto flex flex-col lg:flex-row justify-center lg:py-24 md:py-18 py-10'>
-        <div className='lg:w-6/12 w-full flex flex-col lg:mt-16 mt-0'>
-            <p className=' text-createGray lg:mb-4 mb-2 lg:text-xl text-md border-l-4 pl-2 border-createGray mx-4 lg:mx-0'>Your Vision, Our Drive</p>
+        <div className='container mx-auto flex flex-col lg:flex-row justify-center lg:py-24 md:py-18 pt-2 pb-0'>
+        <div className='md:w-6/12 w-full flex flex-col lg:mt-16 mt-0 md:py-auto py-6'>
+            <p className=' text-createGray md:mb-4 mb-2 lg:text-xl text-md border-l-4 pl-2 border-createGray mx-4 lg:mx-0'>Your Vision, Our Drive</p>
             <p className='text-black lg:text-4xl md:text-2xl text-xl font-bold mx-4 lg:mx-0 lg:w-8/12 w-full'>
-            Empowerment is the name of our game. We're here to fuel your vision and drive your success.
+                Empowerment is the name of our game. We're here to fuel your vision and drive your success.
             </p>
         </div>
-        <div className='mt-[2rem] md:mt-auto lg:w-6/12 w-full flex flex-col bg-black text-white lg:p-12 p-4 lg:gap-12 gap-8'>
+        <div className='mt-0 lg:w-6/12 w-full flex flex-col bg-black text-white lg:p-12 p-4 lg:gap-12 gap-8'>
             <p className='lg:text-xl text-lg leading-45 lg:w-10/12 w-full mx-auto'>
             Creatalysis isn't just a service provider – we're your partners in crime, your collaborators in innovation. Your vision becomes our driving force. We understand that nobody knows your business like you do, and that's why we're here to empower, not overpower.
             </p>
-            <p className='lg:text-xl text-lg leading-36 lg:w-10/12 w-full mx-auto'>
+            <p className='lg:text-xl text-lg leading-45 lg:w-10/12 w-full mx-auto'>
             We're all about seamless integration. You stay in the driver's seat, steering the project according to your business's unique identity. We're the co-pilots, navigating the twists and turns of insights and data, making sure your journey is smooth and successful.
             </p>
         </div>
         </div>
     </section>
     <section className='bg-createYellow'>
-        <div className='container mx-auto flex flex-col lg:flex-row justify-center lg:py-24 md:py-18 py-10'>
-        <div className='lg:w-6/12 w-full flex flex-col lg:mt-16 mt-0'>
-            <p className=' text-createGray lg:mb-4 mb-2 lg:text-xl text-md border-l-4 pl-2 border-createGray mx-4 lg:mx-0'>Heading: Growing Together, Succeeding Together</p>
-            <p className='text-black lg:text-4xl md:text-2xl text-xl font-bold mx-4 lg:mx-0 lg:w-8/12 w-full'>
-            At Creatalysis, your growth isn't just a goal – it's our ultimate victory.
+        <div className='container mx-auto flex flex-col lg:flex-row justify-center lg:py-24 md:py-18 pt-2 pb-0'>
+        <div className='md:w-6/12 w-full flex flex-col lg:mt-16 mt-0 md:py-auto py-6'>
+            <p className=' text-createGray lg:mb-4 mb-2 lg:text-xl text-md border-l-4 pl-2 border-createGray mx-4 lg:mx-0'>Growing Together, Succeeding Together</p>
+            <p className='text-black lg:text-4xl md:text-2xl text-xl font-bold mx-4 lg:mx-0 lg:w-8/12'>
+                At Creatalysis, your growth isn't just a goal – it's our ultimate victory.
             </p>
         </div>
-        <div className='mt-[2rem] md:mt-auto lg:w-6/12 w-full flex flex-col bg-black text-white lg:p-12 p-4 lg:gap-12 gap-8'>
+        <div className='md:mt-auto lg:w-6/12 w-full flex flex-col bg-black text-white lg:p-12 p-4 lg:gap-12 gap-8'>
             <p className='lg:text-xl text-lg leading-45 lg:w-10/12 w-full mx-auto'>
             When we say "Your success is our success," we mean it. We're invested in your growth like it's our own. Your milestones are our moments of celebration, and your achievements fuel our passion.
             </p>
@@ -83,14 +85,14 @@ const About = () => {
         </div>
     </section>
     <section className='bg-createYellow'>
-        <div className='container mx-auto flex flex-col lg:flex-row justify-center lg:py-24 md:py-18 py-10'>
-        <div className='lg:w-6/12 w-full flex flex-col lg:mt-16 mt-0'>
+        <div className='container mx-auto flex flex-col lg:flex-row justify-center lg:py-24 md:py-18 pt-2 pb-0'>
+        <div className='lg:w-6/12 w-full flex flex-col lg:mt-16 mt-0 md:py-auto py-6'>
             <p className=' text-createGray lg:mb-4 mb-2 lg:text-xl text-md border-l-4 pl-2 border-createGray mx-4 lg:mx-0'>A Fresh Perspective on Insights</p>
-            <p className='text-black lg:text-4xl md:text-2xl text-xl font-bold mx-4 lg:mx-0 lg:w-8/12 w-full'>
+            <p className='text-black lg:text-4xl md:text-2xl text-xl font-bold mx-4 lg:mx-0 lg:w-8/12'>
                 We're not your average team – we're the ones who see insights from a whole new angle.
             </p>
         </div>
-        <div className='mt-[2rem] md:mt-auto lg:w-6/12 w-full flex flex-col bg-black text-white lg:p-12 p-4 lg:gap-12 gap-8'>
+        <div className='md:mt-auto lg:w-6/12 w-full flex flex-col bg-black text-white lg:p-12 p-4 lg:gap-12 gap-8'>
             <p className='lg:text-xl text-lg leading-45 lg:w-10/12 w-full mx-auto'>
                 Here at Creatalysis, we're not just another cookie-cutter agency. We're the ones who love shaking things up, and that includes the way we look at insights. We bring a fresh perspective to the table, one that blends creativity and strategic thinking to unveil insights like never before.
             </p>
