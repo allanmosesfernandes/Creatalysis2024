@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import YellowBtn from '../components/buttons/yellowBtn'
 
 const About = () => {
   return (
@@ -99,6 +100,24 @@ const About = () => {
             <p className='lg:text-xl text-lg leading-36 lg:w-10/12 w-full mx-auto'>
                 While others might see data as numbers on a screen, we see stories waiting to be told. We dive deep into understanding your users, their desires, and their dreams. It's not just about what they say; it's about decoding what they really mean. And with this innovative approach, we help you make smarter, more impactful decisions for your business.
             </p>
+        </div>
+        </div>
+    </section>
+    {/* Get in touch */}
+    <section className='bg-black md:border-0 border-8 border-createYellow'>
+        <div className='container py-32 mx-auto items-center'>
+        <div className='lg:w-10/12 w-full mx-auto md:px-22 md:flex md:flex-row flex-col justify-between'>
+            <div>
+            <p className='text-white text-2xl lg:text-4xl font-bold mx-4 lg:mx-0 md:text-left text-center'>
+                Ready to begin a research project?
+            </p>
+            <p className='text-white lg:text-xl text-md my-4 mx-4 lg:mx-0 md:text-left text-center'>
+                Lets connect and begin this journey of success!
+            </p>
+        </div>
+        <div className='w-[80%] md:w-auto md:mx-0 mx-auto'>
+            <YellowBtn text="Let's connect" goTo="/"/>
+        </div>
         </div>
         </div>
     </section>
